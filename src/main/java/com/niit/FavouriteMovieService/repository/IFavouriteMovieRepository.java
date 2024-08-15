@@ -7,4 +7,5 @@ import java.util.Optional;
 
 public interface IFavouriteMovieRepository extends MongoRepository<User,String> {
 
+    User findByUserId(String userId);
 }
